@@ -1,0 +1,3126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ============================================================
+    NEXADOCS – Enterprise Academic File Management
+    Complete Single-File Implementation
+    SEO Optimized | Performance Tuned | Accessibility Compliant
+    ============================================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>NexaDocs – Share Academic Files Effortlessly | Secure Document Management Platform</title>
+    <meta name="title" content="NexaDocs – Share Academic Files Effortlessly | Secure Document Management">
+    <meta name="description" content="NexaDocs: The ultimate academic file management platform. Upload, organize, and share PDFs and PPTs securely. Trusted by 1000+ students and educators worldwide.">
+    <meta name="keywords" content="academic file sharing, document management, student collaboration, secure file upload, PDF sharing, PPT sharing, education technology, cloud storage for students, NexaDocs">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://nexadocs.app/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexadocs.app/">
+    <meta property="og:title" content="NexaDocs – Share Academic Files Effortlessly">
+    <meta property="og:description" content="Upload, organize, and share academic PDFs and PPTs securely. Trusted by 1000+ students and educators worldwide.">
+    <meta property="og:image" content="https://nexadocs.app/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="NexaDocs">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://nexadocs.app/">
+    <meta name="twitter:title" content="NexaDocs – Share Academic Files Effortlessly">
+    <meta name="twitter:description" content="The ultimate academic file management platform. Upload, organize, and share PDFs and PPTs securely.">
+    <meta name="twitter:image" content="https://nexadocs.app/twitter-image.jpg">
+    <meta name="twitter:site" content="@nexadocs">
+    <meta name="twitter:creator" content="@nexadocs">
+    
+    <!-- Theme Color & PWA -->
+    <meta name="theme-color" content="#2563EB">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="NexaDocs">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Favicon – Multiple sizes for modern browsers -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2563EB">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Fonts – Optimized Loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ============================================================
+    STRUCTURED DATA (JSON-LD)
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "NexaDocs",
+        "url": "https://nexadocs.app/",
+        "description": "NexaDocs is an enterprise academic file management platform for students and educators to upload, organize, and share PDFs and PPTs securely.",
+        "applicationCategory": "Educational Application",
+        "operatingSystem": "All",
+        "browserRequirements": "Modern browsers",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "NexaDocs"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1247"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "NexaDocs",
+        "url": "https://nexadocs.app/",
+        "logo": "https://nexadocs.app/logo.png",
+        "description": "Academic file management platform for students and educators.",
+        "email": "support@nexadocs.app",
+        "sameAs": [
+            "https://twitter.com/nexadocs",
+            "https://linkedin.com/company/nexadocs",
+            "https://github.com/nexadocs"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://nexadocs.app/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Features",
+                "item": "https://nexadocs.app/#features"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Dashboard",
+                "item": "https://nexadocs.app/#dashboard"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "FAQ",
+                "item": "https://nexadocs.app/#faq"
+            }
+        ]
+    }
+    </script>
+
+    <!-- ============================================================
+    ALL STYLES – Inline Complete
+    ============================================================ -->
+    <style>
+        /* ============================================================
+        NEXADOCS – Complete Styles
+        ============================================================ */
+        
+        /* ---------- Reset & Variables ---------- */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --blue: #2563EB;
+            --blue-light: #3B82F6;
+            --blue-pale: #EFF6FF;
+            --blue-dark: #1D4ED8;
+            --sky: #0EA5E9;
+            --sky-pale: #F0F9FF;
+            --green: #10B981;
+            --green-pale: #ECFDF5;
+            --text: #111827;
+            --text-2: #374151;
+            --text-3: #6B7280;
+            --text-4: #9CA3AF;
+            --bg: #FFFFFF;
+            --bg-2: #F8FAFC;
+            --bg-3: #F1F5F9;
+            --border: #E5E7EB;
+            --border-2: #D1D5DB;
+            --radius: 16px;
+            --radius-sm: 10px;
+            --radius-lg: 24px;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, .06), 0 1px 2px rgba(0, 0, 0, .04);
+            --shadow: 0 4px 16px rgba(0, 0, 0, .07), 0 1px 4px rgba(0, 0, 0, .04);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, .1), 0 4px 16px rgba(0, 0, 0, .06);
+            --font: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+            --focus-ring: 0 0 0 3px rgba(37, 99, 235, 0.4);
+        }
+
+        /* ---------- Base ---------- */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font);
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ---------- Accessibility ---------- */
+        :focus-visible {
+            outline: 2px solid var(--blue);
+            outline-offset: 2px;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .skip-link {
+            position: fixed;
+            top: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--blue);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 0 0 8px 8px;
+            z-index: 10000;
+            font-weight: 600;
+            transition: top .2s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* ---------- Container ---------- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ---------- Navigation ---------- */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 0 2rem;
+            height: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, .85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(229, 231, 235, .6);
+            transition: all .3s;
+        }
+        nav.scrolled {
+            background: rgba(255, 255, 255, .95);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, .06);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .logo-mark {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--blue) 0%, var(--sky) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .logo-mark svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .logo-name {
+            font-weight: 700;
+            font-size: 17px;
+            letter-spacing: -.3px;
+        }
+        .logo-name span {
+            color: var(--blue);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-3);
+            text-decoration: none;
+            transition: color .2s;
+        }
+        .nav-links a:hover {
+            color: var(--text);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-ghost {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-2);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all .2s;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-family: var(--font);
+        }
+        .btn-ghost:hover {
+            background: var(--bg-2);
+            color: var(--text);
+        }
+
+        .btn-primary {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background: var(--blue);
+            padding: 9px 20px;
+            border-radius: 9px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all .2s;
+            letter-spacing: -.1px;
+            font-family: var(--font);
+        }
+        .btn-primary:hover {
+            background: var(--blue-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, .3);
+        }
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-outline {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            background: white;
+            padding: 13px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            border: 1.5px solid var(--border-2);
+            transition: all .2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font);
+            cursor: pointer;
+        }
+        .btn-outline:hover {
+            border-color: var(--blue);
+            color: var(--blue);
+            background: var(--blue-pale);
+        }
+
+        /* ---------- Sections ---------- */
+        section {
+            padding: 100px 2rem;
+        }
+
+        .section-eyebrow {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--blue);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            line-height: 1.15;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .section-sub {
+            font-size: 17px;
+            color: var(--text-3);
+            max-width: 560px;
+            line-height: 1.7;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+        .section-header .section-sub {
+            margin: 0 auto;
+        }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            padding-top: 140px;
+            padding-bottom: 80px;
+            background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+            overflow: hidden;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(37, 99, 235, .06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(14, 165, 233, .05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--blue-pale);
+            color: var(--blue);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+            letter-spacing: .3px;
+        }
+        .hero-badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: .7;
+                transform: scale(1.3);
+            }
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            color: var(--text);
+            margin-bottom: 20px;
+        }
+        .hero h1 .grad {
+            background: linear-gradient(135deg, var(--blue) 0%, var(--sky) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-sub {
+            font-size: 18px;
+            color: var(--text-3);
+            line-height: 1.7;
+            margin-bottom: 36px;
+            max-width: 480px;
+            font-weight: 400;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .hero-ctas .btn-primary {
+            font-size: 16px;
+            padding: 14px 28px;
+            border-radius: 12px;
+        }
+
+        .hero-trust {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .trust-avatars {
+            display: flex;
+        }
+        .trust-avatars span {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid white;
+            margin-left: -8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 700;
+            color: white;
+        }
+        .trust-avatars span:first-child {
+            margin-left: 0;
+        }
+
+        .trust-text {
+            font-size: 13px;
+            color: var(--text-3);
+        }
+        .trust-text strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        /* ---------- Hero Visual / Mockup ---------- */
+        .hero-visual {
+            position: relative;
+            height: 520px;
+        }
+
+        .mockup-window {
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mockup-bar {
+            height: 40px;
+            background: var(--bg-2);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            gap: 8px;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .dot-r {
+            background: #FC5F5A;
+        }
+        .dot-y {
+            background: #FDBC40;
+        }
+        .dot-g {
+            background: #34C749;
+        }
+
+        .mockup-body {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            height: calc(100% - 40px);
+        }
+
+        .sidebar {
+            background: var(--bg-2);
+            border-right: 1px solid var(--border);
+            padding: 16px 12px;
+        }
+        .sidebar-brand {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 20px;
+            padding: 0 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .sidebar-brand span {
+            width: 22px;
+            height: 22px;
+            background: linear-gradient(135deg, var(--blue), var(--sky));
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sidebar-brand span svg {
+            width: 12px;
+            height: 12px;
+            fill: white;
+        }
+
+        .sb-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 8px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-3);
+            cursor: pointer;
+            transition: all .15s;
+            margin-bottom: 2px;
+        }
+        .sb-item:hover,
+        .sb-item.active {
+            background: white;
+            color: var(--text);
+        }
+        .sb-item.active {
+            box-shadow: var(--shadow-sm);
+        }
+
+        .sb-icon {
+            width: 16px;
+            height: 16px;
+            opacity: .6;
+        }
+        .sb-item.active .sb-icon {
+            opacity: 1;
+        }
+
+        .sb-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 12px 0;
+        }
+        .sb-section {
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text-4);
+            padding: 0 8px;
+            margin-bottom: 6px;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+        }
+
+        .main-panel {
+            padding: 16px;
+            overflow: hidden;
+        }
+
+        .panel-search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--bg-2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 8px 12px;
+            margin-bottom: 14px;
+        }
+        .panel-search input {
+            border: none;
+            background: none;
+            font-size: 12px;
+            color: var(--text-3);
+            outline: none;
+            flex: 1;
+            font-family: inherit;
+        }
+        .panel-search svg {
+            width: 14px;
+            height: 14px;
+            color: var(--text-4);
+            flex-shrink: 0;
+        }
+
+        .panel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+        .panel-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .upload-btn {
+            background: var(--blue);
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 5px 10px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-family: inherit;
+        }
+
+        .file-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .file-card {
+            background: var(--bg-2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all .2s;
+            position: relative;
+            overflow: hidden;
+        }
+        .file-card:hover {
+            border-color: var(--blue);
+            background: var(--blue-pale);
+        }
+
+        .file-thumb {
+            height: 44px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .thumb-pdf {
+            background: linear-gradient(135deg, #FEE2E2, #FECACA);
+        }
+        .thumb-ppt {
+            background: linear-gradient(135deg, #FEF3C7, #FDE68A);
+        }
+
+        .file-name {
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .file-meta {
+            font-size: 9px;
+            color: var(--text-4);
+            margin-top: 2px;
+        }
+
+        .progress-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .prog-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+        .prog-name {
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .prog-pct {
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--blue);
+        }
+        .prog-bar {
+            height: 4px;
+            background: var(--bg-3);
+            border-radius: 100px;
+            overflow: hidden;
+        }
+        .prog-fill {
+            height: 100%;
+            border-radius: 100px;
+            background: linear-gradient(90deg, var(--blue), var(--sky));
+            width: 68%;
+        }
+        .prog-fill2 {
+            background: linear-gradient(90deg, var(--green), #34D399);
+            width: 100%;
+            animation: none;
+        }
+
+        /* ---------- Floating Cards ---------- */
+        .float-card {
+            position: absolute;
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .12);
+            border: 1px solid var(--border);
+            padding: 12px 16px;
+            z-index: 10;
+            animation: floatY 6s ease-in-out infinite;
+        }
+        @keyframes floatY {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .fc-upload {
+            top: -20px;
+            right: -30px;
+            width: 180px;
+            animation-delay: 0s;
+        }
+        .fc-stats {
+            bottom: 40px;
+            left: -40px;
+            width: 160px;
+            animation-delay: 2s;
+        }
+        .fc-notify {
+            top: 160px;
+            right: -50px;
+            width: 170px;
+            animation-delay: 4s;
+        }
+        .fc-label {
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text-3);
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .fc-value {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--text);
+        }
+        .fc-sub {
+            font-size: 10px;
+            color: var(--text-4);
+            margin-top: 2px;
+        }
+        .fc-success {
+            background: var(--green-pale);
+            color: var(--green);
+            font-size: 10px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 100px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 6px;
+        }
+        .fc-notify-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .fc-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            background: var(--blue-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .fc-icon svg {
+            width: 16px;
+            height: 16px;
+            color: var(--blue);
+        }
+        .fc-text p:first-child {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .fc-text p:last-child {
+            font-size: 10px;
+            color: var(--text-3);
+            margin-top: 1px;
+        }
+
+        /* ---------- Features ---------- */
+        .features {
+            background: var(--bg-2);
+        }
+
+        .feat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .feat-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            transition: all .3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .feat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--blue), var(--sky));
+            opacity: 0;
+            transition: opacity .3s;
+        }
+        .feat-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+        .feat-card:hover::before {
+            opacity: 1;
+        }
+
+        .feat-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .fi-blue {
+            background: var(--blue-pale);
+        }
+        .fi-sky {
+            background: var(--sky-pale);
+        }
+        .fi-green {
+            background: var(--green-pale);
+        }
+        .feat-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .feat-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 10px;
+            letter-spacing: -.3px;
+        }
+        .feat-desc {
+            font-size: 14px;
+            color: var(--text-3);
+            line-height: 1.7;
+        }
+
+        /* ---------- How It Works ---------- */
+        .how {
+            background: white;
+        }
+
+        .workflow-track {
+            display: flex;
+            align-items: flex-start;
+            gap: 0;
+            position: relative;
+            margin-top: 60px;
+        }
+        .workflow-track::before {
+            content: '';
+            position: absolute;
+            top: 36px;
+            left: 72px;
+            right: 72px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--blue), var(--sky), var(--green));
+            z-index: 0;
+        }
+
+        .wf-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 0 16px;
+        }
+
+        .wf-num {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid var(--blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--blue);
+            box-shadow: 0 4px 20px rgba(37, 99, 235, .15);
+            transition: all .3s;
+        }
+        .wf-step:hover .wf-num {
+            background: var(--blue);
+            color: white;
+            transform: scale(1.1);
+        }
+        .wf-step:nth-child(2) .wf-num {
+            border-color: var(--sky);
+            color: var(--sky);
+        }
+        .wf-step:nth-child(3) .wf-num {
+            border-color: var(--sky);
+            color: var(--sky);
+        }
+        .wf-step:nth-child(4) .wf-num {
+            border-color: var(--green);
+            color: var(--green);
+        }
+        .wf-step:hover:nth-child(2) .wf-num {
+            background: var(--sky);
+            color: white;
+        }
+        .wf-step:hover:nth-child(3) .wf-num {
+            background: var(--sky);
+            color: white;
+        }
+        .wf-step:hover:nth-child(4) .wf-num {
+            background: var(--green);
+            color: white;
+        }
+
+        .wf-card {
+            background: var(--bg-2);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            transition: all .3s;
+        }
+        .wf-step:hover .wf-card {
+            background: white;
+            box-shadow: var(--shadow);
+        }
+        .wf-card-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+        .wf-card-desc {
+            font-size: 13px;
+            color: var(--text-3);
+            line-height: 1.6;
+        }
+
+        /* ---------- Dashboard Preview ---------- */
+        .dashboard-preview {
+            background: var(--bg-2);
+        }
+
+        .dash-mockup {
+            background: white;
+            border-radius: 24px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            margin-top: 60px;
+        }
+
+        .dash-topbar {
+            height: 52px;
+            background: white;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            gap: 16px;
+        }
+        .dash-topbar-logo {
+            font-weight: 800;
+            font-size: 15px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .dash-topbar-logo span {
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--blue), var(--sky));
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dash-topbar-logo span svg {
+            width: 14px;
+            height: 14px;
+            fill: white;
+        }
+
+        .dash-search {
+            flex: 1;
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 6px 12px;
+        }
+        .dash-search input {
+            border: none;
+            background: none;
+            font-size: 12px;
+            color: var(--text-3);
+            outline: none;
+            width: 100%;
+            font-family: inherit;
+        }
+        .dash-search svg {
+            width: 13px;
+            height: 13px;
+            color: var(--text-4);
+            flex-shrink: 0;
+        }
+
+        .dash-topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-left: auto;
+        }
+
+        .notif-dot {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: var(--bg-2);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+        }
+        .notif-dot svg {
+            width: 15px;
+            height: 15px;
+            color: var(--text-3);
+        }
+        .notif-dot .dot-badge {
+            width: 7px;
+            height: 7px;
+            background: var(--blue);
+            border-radius: 50%;
+            position: absolute;
+            top: 6px;
+            right: 7px;
+            border: 1.5px solid white;
+        }
+
+        .user-av {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7C3AED, #A78BFA);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .dash-body {
+            display: grid;
+            grid-template-columns: 220px 1fr 240px;
+            min-height: 460px;
+        }
+
+        .dash-sidebar {
+            background: var(--bg-2);
+            border-right: 1px solid var(--border);
+            padding: 20px 14px;
+        }
+
+        .ds-section {
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--text-4);
+            letter-spacing: .6px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            margin-bottom: 6px;
+            margin-top: 20px;
+        }
+        .ds-section:first-child {
+            margin-top: 0;
+        }
+
+        .ds-item {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 8px 10px;
+            border-radius: 9px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-3);
+            cursor: pointer;
+            transition: all .15s;
+            margin-bottom: 1px;
+        }
+        .ds-item:hover {
+            background: white;
+            color: var(--text);
+        }
+        .ds-item.active {
+            background: var(--blue-pale);
+            color: var(--blue);
+        }
+        .ds-item.active svg,
+        .ds-item.active .ds-count {
+            color: var(--blue);
+        }
+        .ds-item svg {
+            width: 15px;
+            height: 15px;
+            flex-shrink: 0;
+        }
+
+        .ds-count {
+            font-size: 10px;
+            font-weight: 700;
+            background: var(--bg-3);
+            color: var(--text-4);
+            padding: 1px 6px;
+            border-radius: 100px;
+            margin-left: auto;
+        }
+        .ds-item.active .ds-count {
+            background: rgba(37, 99, 235, .1);
+        }
+
+        .ds-storage {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+            margin-top: 20px;
+        }
+        .ds-stor-head {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            color: var(--text-3);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .ds-stor-bar {
+            height: 5px;
+            background: var(--bg-3);
+            border-radius: 100px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+        .ds-stor-fill {
+            height: 100%;
+            width: 42%;
+            background: linear-gradient(90deg, var(--blue), var(--sky));
+            border-radius: 100px;
+        }
+        .ds-stor-label {
+            font-size: 9px;
+            color: var(--text-4);
+        }
+
+        .dash-main {
+            padding: 24px;
+            overflow: hidden;
+        }
+
+        .dm-welcome {
+            margin-bottom: 20px;
+        }
+        .dm-welcome h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -.3px;
+        }
+        .dm-welcome p {
+            font-size: 13px;
+            color: var(--text-3);
+            margin-top: 2px;
+        }
+
+        .dm-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .dm-stat {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 16px;
+        }
+        .dm-stat-val {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--text);
+            letter-spacing: -1px;
+        }
+        .dm-stat-label {
+            font-size: 11px;
+            color: var(--text-3);
+            margin-top: 2px;
+            font-weight: 500;
+        }
+        .dm-stat-change {
+            font-size: 10px;
+            color: var(--green);
+            font-weight: 600;
+            margin-top: 4px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .dm-files-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+        .dm-files-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .view-all {
+            font-size: 11px;
+            color: var(--blue);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .dm-file-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .dm-file-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all .2s;
+        }
+        .dm-file-row:hover {
+            border-color: var(--blue);
+            background: var(--blue-pale);
+        }
+
+        .dm-file-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+        .fi-pdf2 {
+            background: #FEE2E2;
+        }
+        .fi-ppt2 {
+            background: #FEF3C7;
+        }
+        .fi-pdf3 {
+            background: #EDE9FE;
+        }
+
+        .dm-file-name {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text);
+            flex: 1;
+        }
+        .dm-file-date {
+            font-size: 10px;
+            color: var(--text-4);
+            white-space: nowrap;
+        }
+        .dm-file-size {
+            font-size: 10px;
+            color: var(--text-4);
+            white-space: nowrap;
+            min-width: 40px;
+            text-align: right;
+        }
+
+        .dash-right {
+            border-left: 1px solid var(--border);
+            padding: 20px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .dr-widget {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px;
+        }
+        .dr-widget-title {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .dr-widget-title svg {
+            width: 13px;
+            height: 13px;
+            color: var(--text-4);
+        }
+
+        .preview-thumb {
+            height: 90px;
+            background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            font-size: 28px;
+        }
+
+        .dr-upload-area {
+            border: 2px dashed var(--border-2);
+            border-radius: 10px;
+            padding: 18px;
+            text-align: center;
+            cursor: pointer;
+            transition: all .2s;
+        }
+        .dr-upload-area:hover {
+            border-color: var(--blue);
+            background: var(--blue-pale);
+        }
+        .dr-upload-icon {
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+        .dr-upload-text {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 3px;
+        }
+        .dr-upload-sub {
+            font-size: 10px;
+            color: var(--text-4);
+        }
+
+        .activity-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .activity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .act-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .act-text {
+            font-size: 11px;
+            color: var(--text-3);
+            line-height: 1.5;
+        }
+        .act-time {
+            font-size: 10px;
+            color: var(--text-4);
+            margin-top: 2px;
+        }
+
+        /* ---------- Stats ---------- */
+        .stats {
+            background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 50%, #1E3A8A 100%);
+            padding: 80px 2rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .stat-num {
+            font-size: 52px;
+            font-weight: 800;
+            color: white;
+            letter-spacing: -2px;
+            line-height: 1;
+        }
+        .stat-plus {
+            color: rgba(255, 255, 255, .6);
+            font-size: 36px;
+        }
+        .stat-label {
+            font-size: 15px;
+            color: rgba(255, 255, 255, .7);
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        /* ---------- Why ---------- */
+        .why {
+            background: white;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .why-card {
+            background: var(--bg-2);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 40px 32px;
+            text-align: center;
+            transition: all .3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .why-card:hover {
+            background: white;
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-8px);
+            border-color: transparent;
+        }
+
+        .why-illus {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 36px;
+        }
+        .wi-fast {
+            background: linear-gradient(135deg, #DBEAFE, #BFDBFE);
+        }
+        .wi-sec {
+            background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
+        }
+        .wi-sim {
+            background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
+        }
+
+        .why-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 10px;
+            letter-spacing: -.5px;
+        }
+        .why-desc {
+            font-size: 14px;
+            color: var(--text-3);
+            line-height: 1.7;
+        }
+
+        .why-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 100px;
+            margin-top: 16px;
+        }
+        .wt-fast {
+            background: var(--blue-pale);
+            color: var(--blue);
+        }
+        .wt-sec {
+            background: var(--green-pale);
+            color: var(--green);
+        }
+        .wt-sim {
+            background: #F3F4F6;
+            color: var(--text-2);
+        }
+
+        /* ---------- Testimonials ---------- */
+        .testimonials {
+            background: var(--bg-2);
+        }
+
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .test-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            transition: all .3s;
+        }
+        .test-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+            border-color: transparent;
+        }
+
+        .test-stars {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 16px;
+        }
+        .star {
+            color: #FBBF24;
+            font-size: 14px;
+        }
+
+        .test-quote {
+            font-size: 15px;
+            color: var(--text-2);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .test-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .test-av {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+            flex-shrink: 0;
+        }
+        .av-1 {
+            background: linear-gradient(135deg, #6366F1, #8B5CF6);
+        }
+        .av-2 {
+            background: linear-gradient(135deg, #EC4899, #F43F5E);
+        }
+        .av-3 {
+            background: linear-gradient(135deg, #14B8A6, #10B981);
+        }
+
+        .test-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .test-role {
+            font-size: 12px;
+            color: var(--text-3);
+            margin-top: 1px;
+        }
+
+        /* ---------- FAQ ---------- */
+        .faq {
+            background: white;
+        }
+
+        .faq-grid {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 12px;
+            transition: all .2s;
+        }
+        .faq-item.open {
+            border-color: var(--blue);
+        }
+
+        .faq-q {
+            padding: 18px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+            transition: background .2s;
+        }
+        .faq-item.open .faq-q {
+            background: var(--blue-pale);
+            color: var(--blue);
+        }
+
+        .faq-chevron {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--bg-3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform .3s;
+            flex-shrink: 0;
+        }
+        .faq-item.open .faq-chevron {
+            transform: rotate(180deg);
+            background: rgba(37, 99, 235, .12);
+        }
+
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease, padding .3s;
+        }
+        .faq-item.open .faq-a {
+            max-height: 200px;
+        }
+
+        .faq-a-inner {
+            padding: 0 24px 18px;
+            font-size: 14px;
+            color: var(--text-3);
+            line-height: 1.7;
+        }
+
+        /* ---------- CTA ---------- */
+        .cta-section {
+            background: linear-gradient(135deg, var(--blue-pale) 0%, var(--sky-pale) 50%, var(--green-pale) 100%);
+            text-align: center;
+        }
+
+        .cta-box {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 32px;
+            padding: 80px 60px;
+            box-shadow: var(--shadow-lg);
+            max-width: 780px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(37, 99, 235, .06), transparent);
+            pointer-events: none;
+        }
+        .cta-box h2 {
+            font-size: 44px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            color: var(--text);
+            margin-bottom: 16px;
+            line-height: 1.15;
+        }
+        .cta-box p {
+            font-size: 17px;
+            color: var(--text-3);
+            margin-bottom: 36px;
+            line-height: 1.7;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-buttons .btn-primary {
+            font-size: 16px;
+            padding: 15px 32px;
+            border-radius: 12px;
+        }
+
+        /* ---------- Footer ---------- */
+        footer {
+            background: var(--text);
+            color: rgba(255, 255, 255, .7);
+            padding: 64px 2rem 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 48px;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+        }
+
+        .footer-brand .logo-name {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .footer-brand p {
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .soc-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, .08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all .2s;
+            border: 1px solid rgba(255, 255, 255, .1);
+            text-decoration: none;
+        }
+        .soc-btn:hover {
+            background: rgba(255, 255, 255, .15);
+        }
+        .soc-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: rgba(255, 255, 255, .7);
+        }
+
+        .footer-col h4 {
+            font-size: 12px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .footer-col a {
+            display: block;
+            font-size: 14px;
+            color: rgba(255, 255, 255, .6);
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: color .2s;
+        }
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 28px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 13px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* ---------- Animations ---------- */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .stagger-1 {
+            transition-delay: .1s;
+        }
+        .stagger-2 {
+            transition-delay: .2s;
+        }
+        .stagger-3 {
+            transition-delay: .3s;
+        }
+        .stagger-4 {
+            transition-delay: .4s;
+        }
+        .stagger-5 {
+            transition-delay: .5s;
+        }
+
+        /* ---------- Modal ---------- */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-box {
+            background: white;
+            border-radius: 28px;
+            padding: 40px 32px 32px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            animation: modalIn 0.25s ease;
+            border: 1px solid var(--border);
+        }
+        @keyframes modalIn {
+            from {
+                opacity: 0;
+                transform: scale(0.96) translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .modal-box h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+            letter-spacing: -0.4px;
+        }
+        .modal-box p {
+            font-size: 15px;
+            color: var(--text-3);
+            margin-bottom: 28px;
+        }
+
+        .modal-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .modal-option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px 12px;
+            background: var(--bg-2);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: var(--font);
+        }
+        .modal-option:hover {
+            border-color: var(--blue);
+            background: var(--blue-pale);
+            color: var(--blue);
+            transform: scale(1.02);
+        }
+        .modal-option svg {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+
+        .modal-close {
+            margin-top: 24px;
+            background: none;
+            border: none;
+            font-size: 14px;
+            color: var(--text-4);
+            cursor: pointer;
+            font-weight: 500;
+            transition: color 0.2s;
+            font-family: var(--font);
+        }
+        .modal-close:hover {
+            color: var(--text);
+        }
+
+        /* ============================================================
+        RESPONSIVE
+        ============================================================ */
+        @media(max-width:1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+            .hero h1 {
+                font-size: 44px;
+            }
+            .hero-visual {
+                height: 400px;
+            }
+            .feat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .dash-body {
+                grid-template-columns: 200px 1fr;
+            }
+            .dash-right {
+                display: none;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+            }
+        }
+
+        @media(max-width:768px) {
+            nav .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero-ctas .btn-primary,
+            .btn-outline {
+                font-size: 14px;
+                padding: 12px 20px;
+            }
+            .feat-grid {
+                grid-template-columns: 1fr;
+            }
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+            .test-grid {
+                grid-template-columns: 1fr;
+            }
+            .workflow-track {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .workflow-track::before {
+                display: none;
+            }
+            .section-title {
+                font-size: 32px;
+            }
+            .cta-box {
+                padding: 48px 24px;
+            }
+            .cta-box h2 {
+                font-size: 30px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stat-num {
+                font-size: 40px;
+            }
+            .dash-body {
+                grid-template-columns: 1fr;
+            }
+            .dash-sidebar {
+                display: none;
+            }
+            .mockup-body {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            section {
+                padding: 72px 1.5rem;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+            .hero {
+                padding-top: 120px;
+            }
+            .fc-upload,
+            .fc-stats,
+            .fc-notify {
+                display: none;
+            }
+        }
+
+        @media(max-width:480px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            .dm-stats {
+                grid-template-columns: 1fr;
+            }
+            .file-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            .stat-num {
+                font-size: 32px;
+            }
+            .cta-box {
+                padding: 32px 16px;
+            }
+            .cta-box h2 {
+                font-size: 24px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ============================================================
+    SKIP LINK – Accessibility
+    ============================================================ -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <a href="/" class="nav-logo" aria-label="NexaDocs Home">
+            <div class="logo-mark" aria-hidden="true">
+                <svg viewBox="0 0 20 20" role="img" aria-label="NexaDocs logo"><path d="M4 3h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm2 3v8h8V6H6zm2 2h4v1H8V8zm0 2h4v1H8v-1zm0 2h2v1H8v-1z"/></svg>
+            </div>
+            <span class="logo-name">Nexa<span>Docs</span></span>
+        </a>
+        <div class="nav-links" role="menubar">
+            <a href="#features" role="menuitem">Features</a>
+            <a href="#how" role="menuitem">How It Works</a>
+            <a href="#dashboard" role="menuitem">Dashboard</a>
+            <a href="#faq" role="menuitem">FAQ</a>
+            <a href="#contact" role="menuitem">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-ghost" id="loginBtn" aria-label="Log in to your NexaDocs account">Log in</button>
+            <button class="btn-primary" id="getStartedBtn" aria-label="Get started with NexaDocs for free">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    MAIN CONTENT
+    ============================================================ -->
+    <main id="main-content">
+
+        <!-- ============================================================
+        HERO SECTION
+        ============================================================ -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content fade-up">
+                        <div class="hero-badge" aria-label="Built for Academic Excellence">🎓 Built for Academic Excellence</div>
+                        <h1 id="hero-title">Share Academic Files <span class="grad">Effortlessly.</span></h1>
+                        <p class="hero-sub">Upload your PPT and PDF files securely and allow viewers to access them instantly from one organized platform.</p>
+                        <div class="hero-ctas">
+                            <button class="btn-primary" id="heroUploadBtn" aria-label="Upload academic files to NexaDocs">
+                                <svg style="width:16px;height:16px;vertical-align:-2px;margin-right:6px;fill:currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a1 1 0 011 1v8.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 11.586V3a1 1 0 011-1z"/><path d="M3 15a1 1 0 011 1h12a1 1 0 110 2H4a1 1 0 01-1-1v-1a1 1 0 011-1z"/></svg>
+                                Upload Files
+                            </button>
+                            <a href="#dashboard" class="btn-outline" aria-label="Explore the NexaDocs dashboard">
+                                Explore Dashboard
+                                <svg style="width:14px;height:14px;vertical-align:-1px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                        <div class="hero-trust">
+                            <div class="trust-avatars" aria-label="Trusted by students">
+                                <span style="background:linear-gradient(135deg,#6366F1,#8B5CF6)" aria-hidden="true">AK</span>
+                                <span style="background:linear-gradient(135deg,#EC4899,#F43F5E)" aria-hidden="true">SR</span>
+                                <span style="background:linear-gradient(135deg,#14B8A6,#10B981)" aria-hidden="true">MT</span>
+                                <span style="background:linear-gradient(135deg,#F59E0B,#EF4444)" aria-hidden="true">JP</span>
+                            </div>
+                            <div class="trust-text"><strong>1,000+ students</strong> already uploading their files</div>
+                        </div>
+                    </div>
+                    <div class="hero-visual fade-up stagger-2" aria-hidden="true">
+                        <!-- Floating cards -->
+                        <div class="float-card fc-upload">
+                            <div class="fc-label">
+                                <svg style="width:12px;height:12px;fill:#10B981" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a1 1 0 011 1v8.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 11.586V3a1 1 0 011-1z"/></svg>
+                                Upload complete
+                            </div>
+                            <div style="font-size:12px;font-weight:600;color:var(--text)">Lecture_05_ML.pdf</div>
+                            <div class="fc-success">✓ Uploaded successfully</div>
+                        </div>
+                        <div class="float-card fc-stats">
+                            <div class="fc-label">Files uploaded</div>
+                            <div class="fc-value">5,240</div>
+                            <div class="fc-sub">+128 this week</div>
+                        </div>
+                        <div class="float-card fc-notify">
+                            <div class="fc-notify-content">
+                                <div class="fc-icon">
+                                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+                                </div>
+                                <div class="fc-text">
+                                    <p>New file available</p>
+                                    <p>Chapter_3_Notes.pptx shared by Dr. Sharma</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dashboard mockup -->
+                        <div class="mockup-window" role="img" aria-label="NexaDocs dashboard preview">
+                            <div class="mockup-bar">
+                                <div class="dot dot-r" aria-hidden="true"></div>
+                                <div class="dot dot-y" aria-hidden="true"></div>
+                                <div class="dot dot-g" aria-hidden="true"></div>
+                                <div style="flex:1;text-align:center;font-size:11px;color:var(--text-4)">nexadocs.app/dashboard</div>
+                            </div>
+                            <div class="mockup-body">
+                                <div class="sidebar">
+                                    <div class="sidebar-brand">
+                                        <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm2 3v8h8V6H6z" fill="white"/></svg></span>
+                                        NexaDocs
+                                    </div>
+                                    <div class="sb-item active" role="button" tabindex="0">Dashboard</div>
+                                    <div class="sb-item" role="button" tabindex="0">My Files</div>
+                                    <div class="sb-item" role="button" tabindex="0">Recent</div>
+                                    <div class="sb-divider"></div>
+                                    <div class="sb-section">Courses</div>
+                                    <div class="sb-item" role="button" tabindex="0">📘 CS 401</div>
+                                    <div class="sb-item" role="button" tabindex="0">📗 Math 201</div>
+                                    <div class="sb-item" role="button" tabindex="0">📙 Phy 301</div>
+                                </div>
+                                <div class="main-panel">
+                                    <div class="panel-search" role="search">
+                                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                        <input type="text" placeholder="Search files..." readonly aria-label="Search academic files">
+                                    </div>
+                                    <div class="panel-header">
+                                        <div class="panel-title">Recent Uploads</div>
+                                        <button class="upload-btn" id="mockUploadBtn" aria-label="Upload a new file">
+                                            <svg style="width:10px;height:10px;fill:currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"/></svg>
+                                            Upload
+                                        </button>
+                                    </div>
+                                    <div class="file-grid">
+                                        <div class="file-card" role="button" tabindex="0">
+                                            <div class="file-thumb thumb-pdf" aria-hidden="true">📄</div>
+                                            <div class="file-name">Lecture_05_ML.pdf</div>
+                                            <div class="file-meta">2.4 MB · 2h ago</div>
+                                        </div>
+                                        <div class="file-card" role="button" tabindex="0">
+                                            <div class="file-thumb thumb-ppt" aria-hidden="true">📊</div>
+                                            <div class="file-name">Chapter_3.pptx</div>
+                                            <div class="file-meta">5.1 MB · 5h ago</div>
+                                        </div>
+                                        <div class="file-card" role="button" tabindex="0">
+                                            <div class="file-thumb thumb-pdf" style="background:linear-gradient(135deg,#EDE9FE,#DDD6FE)" aria-hidden="true">📋</div>
+                                            <div class="file-name">Assignment_02.pdf</div>
+                                            <div class="file-meta">890 KB · 1d ago</div>
+                                        </div>
+                                        <div class="file-card" role="button" tabindex="0">
+                                            <div class="file-thumb thumb-ppt" style="background:linear-gradient(135deg,#D1FAE5,#A7F3D0)" aria-hidden="true">🗂️</div>
+                                            <div class="file-name">Slides_Week4.pptx</div>
+                                            <div class="file-meta">3.8 MB · 2d ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-card">
+                                        <div class="prog-header">
+                                            <div class="prog-name">Uploading: Database_Notes.pdf</div>
+                                            <div class="prog-pct">68%</div>
+                                        </div>
+                                        <div class="prog-bar"><div class="prog-fill" style="width:68%" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        <div style="margin-top:8px">
+                                            <div class="prog-header">
+                                                <div class="prog-name">Storage used</div>
+                                                <div style="font-size:10px;color:var(--text-3)">4.2 / 10 GB</div>
+                                            </div>
+                                            <div class="prog-bar"><div class="prog-fill prog-fill2" style="width:42%" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        FEATURES SECTION
+        ============================================================ -->
+        <section class="features" id="features" aria-labelledby="features-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow fade-up">Features</span>
+                    <h2 id="features-title" class="section-title fade-up stagger-1">Everything you need to manage academic files</h2>
+                    <p class="section-sub fade-up stagger-2">Purpose-built tools for students, teachers, and institutions to share knowledge efficiently.</p>
+                </div>
+                <div class="feat-grid">
+                    <article class="feat-card fade-up stagger-1">
+                        <div class="feat-icon fi-blue" aria-hidden="true">
+                            <svg fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                        </div>
+                        <h3 class="feat-title">Secure File Upload</h3>
+                        <p class="feat-desc">Upload PDF and PPT files with enterprise-grade encryption. Your academic materials are protected at every step.</p>
+                    </article>
+                    <article class="feat-card fade-up stagger-2">
+                        <div class="feat-icon fi-sky" aria-hidden="true">
+                            <svg fill="none" stroke="#0EA5E9" stroke-width="2" viewBox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        </div>
+                        <h3 class="feat-title">Fast File Viewing</h3>
+                        <p class="feat-desc">Open documents instantly without downloading. Stream PDFs and presentations right in the browser.</p>
+                    </article>
+                    <article class="feat-card fade-up stagger-3">
+                        <div class="feat-icon fi-green" aria-hidden="true">
+                            <svg fill="none" stroke="#10B981" stroke-width="2" viewBox="0 0 24 24"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                        </div>
+                        <h3 class="feat-title">Cloud Storage</h3>
+                        <p class="feat-desc">All files are safely organized in the cloud. Access your academic materials from any device, anytime.</p>
+                    </article>
+                    <article class="feat-card fade-up stagger-1">
+                        <div class="feat-icon fi-blue" aria-hidden="true">
+                            <svg fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                        </div>
+                        <h3 class="feat-title">Search Files</h3>
+                        <p class="feat-desc">Find any file in seconds with intelligent search. Filter by name, course, date, or file type instantly.</p>
+                    </article>
+                    <article class="feat-card fade-up stagger-2">
+                        <div class="feat-icon fi-sky" aria-hidden="true">
+                            <svg fill="none" stroke="#0EA5E9" stroke-width="2" viewBox="0 0 24 24"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+                        </div>
+                        <h3 class="feat-title">Course Organisation</h3>
+                        <p class="feat-desc">Group files by course, semester, or topic. Keep your academic content structured and easy to navigate.</p>
+                    </article>
+                    <article class="feat-card fade-up stagger-3">
+                        <div class="feat-icon fi-green" aria-hidden="true">
+                            <svg fill="none" stroke="#10B981" stroke-width="2" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                        </div>
+                        <h3 class="feat-title">Responsive Dashboard</h3>
+                        <p class="feat-desc">Access your files seamlessly on desktop, tablet, or mobile. A consistent experience across every screen size.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        HOW IT WORKS
+        ============================================================ -->
+        <section class="how" id="how" aria-labelledby="how-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow fade-up">Workflow</span>
+                    <h2 id="how-title" class="section-title fade-up stagger-1">From upload to view in seconds</h2>
+                    <p class="section-sub fade-up stagger-2">A simple four-step flow that removes all friction from sharing academic content.</p>
+                </div>
+                <div class="workflow-track">
+                    <div class="wf-step fade-up stagger-1">
+                        <div class="wf-num" aria-hidden="true">
+                            <svg style="width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:2" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                        </div>
+                        <div class="wf-card">
+                            <h3 class="wf-card-title">Student uploads file</h3>
+                            <p class="wf-card-desc">Drag and drop PDFs or PPT files. Supports batch uploads with progress tracking.</p>
+                        </div>
+                    </div>
+                    <div class="wf-step fade-up stagger-2">
+                        <div class="wf-num" aria-hidden="true">
+                            <svg style="width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:2" viewBox="0 0 24 24"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                        </div>
+                        <div class="wf-card">
+                            <h3 class="wf-card-title">System stores securely</h3>
+                            <p class="wf-card-desc">Files are encrypted and stored across redundant cloud servers with 99.9% uptime.</p>
+                        </div>
+                    </div>
+                    <div class="wf-step fade-up stagger-3">
+                        <div class="wf-num" aria-hidden="true">
+                            <svg style="width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:2" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                        </div>
+                        <div class="wf-card">
+                            <h3 class="wf-card-title">Dashboard updates</h3>
+                            <p class="wf-card-desc">The viewer dashboard refreshes instantly. New files appear with notifications.</p>
+                        </div>
+                    </div>
+                    <div class="wf-step fade-up stagger-4">
+                        <div class="wf-num" aria-hidden="true">
+                            <svg style="width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:2" viewBox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        </div>
+                        <div class="wf-card">
+                            <h3 class="wf-card-title">Viewer opens file</h3>
+                            <p class="wf-card-desc">Click to preview PDFs and slides right in the browser. No downloads required.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        DASHBOARD PREVIEW
+        ============================================================ -->
+        <section class="dashboard-preview" id="dashboard" aria-labelledby="dashboard-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow fade-up">Dashboard</span>
+                    <h2 id="dashboard-title" class="section-title fade-up stagger-1">A workspace built for clarity</h2>
+                    <p class="section-sub fade-up stagger-2">Everything in one organised view — your files, courses, and activity at a glance.</p>
+                </div>
+                <div class="dash-mockup fade-up stagger-2" role="img" aria-label="NexaDocs interactive dashboard preview">
+                    <div class="dash-topbar">
+                        <div class="dash-topbar-logo">
+                            <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm2 3v8h8V6H6z" fill="white"/></svg></span>
+                            NexaDocs
+                        </div>
+                        <div class="dash-search" role="search">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                            <input type="text" placeholder="Search files, courses, or folders…" readonly aria-label="Search NexaDocs">
+                        </div>
+                        <div class="dash-topbar-right">
+                            <div class="notif-dot" role="button" tabindex="0" aria-label="Notifications">
+                                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+                                <div class="dot-badge" aria-hidden="true"></div>
+                            </div>
+                            <div class="user-av" aria-label="User avatar: Arjun Kumar">AK</div>
+                        </div>
+                    </div>
+                    <div class="dash-body">
+                        <div class="dash-sidebar">
+                            <div class="ds-section">Main</div>
+                            <div class="ds-item active" role="button" tabindex="0">Dashboard</div>
+                            <div class="ds-item" role="button" tabindex="0">My Files <span class="ds-count">48</span></div>
+                            <div class="ds-item" role="button" tabindex="0">Recent</div>
+                            <div class="ds-item" role="button" tabindex="0">Shared <span class="ds-count">12</span></div>
+                            <div class="ds-section">Courses</div>
+                            <div class="ds-item" role="button" tabindex="0">CS 401 – Machine Learning</div>
+                            <div class="ds-item" role="button" tabindex="0">Math 201 – Calculus</div>
+                            <div class="ds-item" role="button" tabindex="0">Physics 301 – Optics</div>
+                            <div class="ds-section">Settings</div>
+                            <div class="ds-item" role="button" tabindex="0">Settings</div>
+                            <div class="ds-storage">
+                                <div class="ds-stor-head">
+                                    <span>Storage</span>
+                                    <span>4.2 / 10 GB</span>
+                                </div>
+                                <div class="ds-stor-bar"><div class="ds-stor-fill" style="width:42%" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <div class="ds-stor-label">42% used · 5.8 GB available</div>
+                            </div>
+                        </div>
+                        <div class="dash-main">
+                            <div class="dm-welcome">
+                                <h3>Good morning, Arjun 👋</h3>
+                                <p>You have 3 new files shared with you today.</p>
+                            </div>
+                            <div class="dm-stats">
+                                <div class="dm-stat">
+                                    <div class="dm-stat-val">48</div>
+                                    <div class="dm-stat-label">Total Files</div>
+                                    <div class="dm-stat-change">↑ +6 this week</div>
+                                </div>
+                                <div class="dm-stat">
+                                    <div class="dm-stat-val">6</div>
+                                    <div class="dm-stat-label">Courses</div>
+                                    <div class="dm-stat-change" style="color:var(--sky)">↑ 1 new</div>
+                                </div>
+                                <div class="dm-stat">
+                                    <div class="dm-stat-val">12</div>
+                                    <div class="dm-stat-label">Shared with me</div>
+                                    <div class="dm-stat-change">↑ +3 today</div>
+                                </div>
+                            </div>
+                            <div class="dm-files-header">
+                                <div class="dm-files-title">Recent Files</div>
+                                <a class="view-all" href="#" aria-label="View all recent files">View all →</a>
+                            </div>
+                            <div class="dm-file-list">
+                                <div class="dm-file-row" role="button" tabindex="0">
+                                    <div class="dm-file-icon fi-pdf2" aria-hidden="true">📄</div>
+                                    <div class="dm-file-name">Lecture_05_MachineLearning.pdf</div>
+                                    <div class="dm-file-date">Today, 9:30 AM</div>
+                                    <div class="dm-file-size">2.4 MB</div>
+                                </div>
+                                <div class="dm-file-row" role="button" tabindex="0">
+                                    <div class="dm-file-icon fi-ppt2" aria-hidden="true">📊</div>
+                                    <div class="dm-file-name">Chapter_3_NeuralNetworks.pptx</div>
+                                    <div class="dm-file-date">Today, 7:15 AM</div>
+                                    <div class="dm-file-size">5.1 MB</div>
+                                </div>
+                                <div class="dm-file-row" role="button" tabindex="0">
+                                    <div class="dm-file-icon fi-pdf3" aria-hidden="true">📋</div>
+                                    <div class="dm-file-name">Assignment_02_Calculus.pdf</div>
+                                    <div class="dm-file-date">Yesterday</div>
+                                    <div class="dm-file-size">890 KB</div>
+                                </div>
+                                <div class="dm-file-row" role="button" tabindex="0">
+                                    <div class="dm-file-icon fi-ppt2" aria-hidden="true">🗂️</div>
+                                    <div class="dm-file-name">Optics_Week4_Slides.pptx</div>
+                                    <div class="dm-file-date">2 days ago</div>
+                                    <div class="dm-file-size">3.8 MB</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash-right">
+                            <div class="dr-widget">
+                                <div class="dr-widget-title">Quick preview</div>
+                                <div class="preview-thumb" aria-hidden="true">📄</div>
+                                <div style="font-size:11px;font-weight:600;color:var(--text);margin-bottom:3px">Lecture_05_ML.pdf</div>
+                                <div style="font-size:10px;color:var(--text-4)">24 pages · 2.4 MB</div>
+                                <div style="margin-top:10px;display:flex;gap:6px">
+                                    <button style="flex:1;background:var(--blue);color:white;border:none;border-radius:7px;padding:7px;font-size:11px;font-weight:600;cursor:pointer;font-family:inherit" aria-label="Open the file">Open</button>
+                                    <button style="flex:1;background:var(--bg-2);color:var(--text);border:1px solid var(--border);border-radius:7px;padding:7px;font-size:11px;font-weight:600;cursor:pointer;font-family:inherit" aria-label="Share the file">Share</button>
+                                </div>
+                            </div>
+                            <div class="dr-widget">
+                                <div class="dr-widget-title">Upload files</div>
+                                <div class="dr-upload-area" id="uploadAreaWidget" role="button" tabindex="0" aria-label="Drop files to upload">
+                                    <div class="dr-upload-icon" aria-hidden="true">☁️</div>
+                                    <div class="dr-upload-text">Drop files here</div>
+                                    <div class="dr-upload-sub">PDF, PPTX up to 50 MB</div>
+                                </div>
+                            </div>
+                            <div class="dr-widget">
+                                <div class="dr-widget-title">Recent activity</div>
+                                <div class="activity-list">
+                                    <div class="activity-item">
+                                        <div class="act-dot" style="background:var(--blue)" aria-hidden="true"></div>
+                                        <div>
+                                            <div class="act-text">You uploaded <strong>Lecture_05.pdf</strong></div>
+                                            <div class="act-time">2 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="act-dot" style="background:var(--green)" aria-hidden="true"></div>
+                                        <div>
+                                            <div class="act-text">Dr. Sharma shared <strong>Chapter_3.pptx</strong></div>
+                                            <div class="act-time">5 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="act-dot" style="background:var(--sky)" aria-hidden="true"></div>
+                                        <div>
+                                            <div class="act-text">Priya viewed <strong>Assignment_02.pdf</strong></div>
+                                            <div class="act-time">Yesterday</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="act-dot" style="background:#F59E0B" aria-hidden="true"></div>
+                                        <div>
+                                            <div class="act-text">New course folder created: <strong>Phy 301</strong></div>
+                                            <div class="act-time">2 days ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        STATS SECTION
+        ============================================================ -->
+        <section class="stats" id="stats" aria-labelledby="stats-title">
+            <div class="container">
+                <h2 id="stats-title" class="sr-only">NexaDocs Statistics</h2>
+                <div class="stats-grid">
+                    <div class="fade-up stagger-1" style="text-align:center">
+                        <div class="stat-num"><span class="counter" data-target="5240">0</span><span class="stat-plus">+</span></div>
+                        <div class="stat-label">Files Uploaded</div>
+                    </div>
+                    <div class="fade-up stagger-2" style="text-align:center">
+                        <div class="stat-num"><span class="counter" data-target="1000">0</span><span class="stat-plus">+</span></div>
+                        <div class="stat-label">Students</div>
+                    </div>
+                    <div class="fade-up stagger-3" style="text-align:center">
+                        <div class="stat-num"><span class="counter" data-target="250">0</span><span class="stat-plus">+</span></div>
+                        <div class="stat-label">Courses</div>
+                    </div>
+                    <div class="fade-up stagger-4" style="text-align:center">
+                        <div class="stat-num"><span class="counter" data-target="99">0</span><span style="font-size:36px;color:rgba(255,255,255,.6)">.9%</span></div>
+                        <div class="stat-label">Availability</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        WHY NEXADOCS
+        ============================================================ -->
+        <section class="why" id="why" aria-labelledby="why-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow fade-up">Why NexaDocs</span>
+                    <h2 id="why-title" class="section-title fade-up stagger-1">Built on three principles</h2>
+                    <p class="section-sub fade-up stagger-2">We obsessed over the experience so you can focus on learning, not logistics.</p>
+                </div>
+                <div class="why-grid">
+                    <article class="why-card fade-up stagger-1">
+                        <div class="why-illus wi-fast" aria-hidden="true">⚡</div>
+                        <h3 class="why-title">Fast</h3>
+                        <p class="why-desc">Files upload and open in under two seconds on any connection. Zero loading screens between you and your content.</p>
+                        <div class="why-tag wt-fast">⚡ Under 2s load time</div>
+                    </article>
+                    <article class="why-card fade-up stagger-2">
+                        <div class="why-illus wi-sec" aria-hidden="true">🔒</div>
+                        <h3 class="why-title">Secure</h3>
+                        <p class="why-desc">AES-256 encryption at rest and in transit. Role-based access control means files reach only the people you intend.</p>
+                        <div class="why-tag wt-sec">🔒 AES-256 encrypted</div>
+                    </article>
+                    <article class="why-card fade-up stagger-3">
+                        <div class="why-illus wi-sim" aria-hidden="true">✨</div>
+                        <h3 class="why-title">Simple</h3>
+                        <p class="why-desc">Designed for everyone — from first-year students to department heads. If you can drag a file, you can use NexaDocs.</p>
+                        <div class="why-tag wt-sim">✨ No training needed</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        TESTIMONIALS
+        ============================================================ -->
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow fade-up">Testimonials</span>
+                    <h2 id="testimonials-title" class="section-title fade-up stagger-1">Loved by students and educators</h2>
+                    <p class="section-sub fade-up stagger-2">Real feedback from the people who rely on NexaDocs every day.</p>
+                </div>
+                <div class="test-grid">
+                    <article class="test-card fade-up stagger-1">
+                        <div class="test-stars" aria-label="5 out of 5 stars">
+                            <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span>
+                        </div>
+                        <blockquote class="test-quote">"NexaDocs transformed how I share notes. I used to email PDFs individually — now my classmates just visit the link and everything's there. It's genuinely made study groups so much easier."</blockquote>
+                        <div class="test-author">
+                            <div class="test-av av-1" aria-hidden="true">AK</div>
+                            <div>
+                                <div class="test-name">Arjun Kumar</div>
+                                <div class="test-role">Final Year, Computer Science · IIT Delhi</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="test-card fade-up stagger-2">
+                        <div class="test-stars" aria-label="5 out of 5 stars">
+                            <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span>
+                        </div>
+                        <blockquote class="test-quote">"I upload my weekly lecture slides once and every student in the batch gets instant access. The course folder structure keeps everything tidy without me having to organise it manually."</blockquote>
+                        <div class="test-author">
+                            <div class="test-av av-2" aria-hidden="true">DS</div>
+                            <div>
+                                <div class="test-name">Dr. Sunita Rao</div>
+                                <div class="test-role">Associate Professor · Dept. of Mathematics</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="test-card fade-up stagger-3">
+                        <div class="test-stars" aria-label="5 out of 5 stars">
+                            <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span>
+                        </div>
+                        <blockquote class="test-quote">"Rolling this out across our faculty reduced our storage support tickets by 80%. The simple interface means professors adopt it without IT hand-holding, and the uptime has been rock solid."</blockquote>
+                        <div class="test-author">
+                            <div class="test-av av-3" aria-hidden="true">RP</div>
+                            <div>
+                                <div class="test-name">Rahul Patel</div>
+                                <div class="test-role">Director of Digital Learning · Apex University</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        FAQ SECTION
+        ============================================================ -->
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow fade-up">FAQ</span>
+                    <h2 id="faq-title" class="section-title fade-up stagger-1">Common questions</h2>
+                    <p class="section-sub fade-up stagger-2">Everything you need to know before you start uploading.</p>
+                </div>
+                <div class="faq-grid fade-up stagger-2">
+                    <div class="faq-item open">
+                        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="true">
+                            Which file types are supported?
+                            <div class="faq-chevron" aria-hidden="true">
+                                <svg style="width:12px;height:12px" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                            </div>
+                        </div>
+                        <div class="faq-a"><div class="faq-a-inner">NexaDocs supports PDF (.pdf) and PowerPoint (.pptx, .ppt) files. Each file can be up to 50 MB. Support for additional formats including Word documents is on our roadmap.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+                            Can I upload PowerPoint files?
+                            <div class="faq-chevron" aria-hidden="true">
+                                <svg style="width:12px;height:12px" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                            </div>
+                        </div>
+                        <div class="faq-a"><div class="faq-a-inner">Yes. Both .pptx and the older .ppt format are fully supported. Viewers can open presentations directly in the browser with slide navigation — no PowerPoint license required.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+                            How do viewers access files?
+                            <div class="faq-chevron" aria-hidden="true">
+                                <svg style="width:12px;height:12px" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                            </div>
+                        </div>
+                        <div class="faq-a"><div class="faq-a-inner">Viewers log in to their NexaDocs account and see files shared with them on their dashboard. Files can also be shared via a direct link. You control who gets access — by individual, by course group, or via an open link.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+                            Is my data secure?
+                            <div class="faq-chevron" aria-hidden="true">
+                                <svg style="width:12px;height:12px" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                            </div>
+                        </div>
+                        <div class="faq-a"><div class="faq-a-inner">All files are encrypted with AES-256 at rest and TLS 1.3 in transit. We do not share your data with third parties. Files are stored across geographically redundant servers for 99.9% availability.</div></div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+                            Is there a storage limit?
+                            <div class="faq-chevron" aria-hidden="true">
+                                <svg style="width:12px;height:12px" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                            </div>
+                        </div>
+                        <div class="faq-a"><div class="faq-a-inner">Free accounts include 10 GB of storage. Institution accounts can request expanded storage. We'll notify you well before you approach your limit and give you options to manage space.</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CALL TO ACTION
+        ============================================================ -->
+        <section class="cta-section" id="contact" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-box fade-up">
+                    <h2 id="cta-title">Ready to share your academic files?</h2>
+                    <p>Start uploading your PDFs and PowerPoint presentations in seconds. No credit card required.</p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary" id="ctaUploadBtn" aria-label="Start uploading files with NexaDocs for free">
+                            <svg style="width:16px;height:16px;vertical-align:-2px;margin-right:6px;fill:currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a1 1 0 011 1v8.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 11.586V3a1 1 0 011-1z"/></svg>
+                            Upload Now — it's free
+                        </button>
+                        <a href="#features" class="btn-outline">Learn More</a>
+                    </div>
+                    <div style="margin-top:24px;font-size:13px;color:var(--text-4);display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap">
+                        <span>✓ Free to start</span>
+                        <span>✓ No credit card</span>
+                        <span>✓ 10 GB free storage</span>
+                        <span>✓ Cancel anytime</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer role="contentinfo">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="nav-logo" style="text-decoration:none;margin-bottom:14px;display:inline-flex" aria-label="NexaDocs Home">
+                    <div class="logo-mark" aria-hidden="true">
+                        <svg viewBox="0 0 20 20"><path d="M4 3h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm2 3v8h8V6H6zm2 2h4v1H8V8zm0 2h4v1H8v-1zm0 2h2v1H8v-1z"/></svg>
+                    </div>
+                    <span class="logo-name" style="color:white">Nexa<span>Docs</span></span>
+                </a>
+                <p>The simplest way for students and educators to upload, organise, and share academic files in one secure platform.</p>
+                <div class="footer-social">
+                    <a href="#" class="soc-btn" aria-label="Follow NexaDocs on Twitter"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                    <a href="#" class="soc-btn" aria-label="Follow NexaDocs on LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+                    <a href="#" class="soc-btn" aria-label="Follow NexaDocs on Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="rgba(255,255,255,.7)" stroke-width="2" stroke-linecap="round"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <a href="#features">Features</a>
+                <a href="#how">How it works</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#contact">Pricing</a>
+                <a href="#">Changelog</a>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <a href="#">Help centre</a>
+                <a href="#contact">Contact us</a>
+                <a href="#">System status</a>
+                <a href="#">Community</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms of service</a>
+                <a href="#">Cookie policy</a>
+                <a href="#">Security</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 NexaDocs. All rights reserved.</span>
+            <span style="color:rgba(255,255,255,.4)">Made with ♥ for students everywhere</span>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    MODAL – Role Selection
+    ============================================================ -->
+    <div class="modal-overlay" id="roleModal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-box">
+            <h3 id="modal-title">🎯 Choose your role</h3>
+            <p>Select how you want to use NexaDocs</p>
+            <div class="modal-options">
+                <button class="modal-option" id="studentOption" aria-label="Continue as a Student">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    Student
+                </button>
+                <button class="modal-option" id="teacherOption" aria-label="Continue as a Teacher or Educator">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                    Teacher / Educator
+                </button>
+            </div>
+            <button class="modal-close" id="closeModalBtn" aria-label="Close role selection">Close</button>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    JAVASCRIPT – Complete Inline
+    ============================================================ -->
+    <script>
+        // ============================================================
+        // NEXADOCS – Complete Application JavaScript
+        // ============================================================
+
+        (function() {
+            'use strict';
+
+            // ---- Nav scroll effect ----
+            const nav = document.getElementById('navbar');
+            let scrollTimeout;
+
+            window.addEventListener('scroll', function() {
+                if (scrollTimeout) return;
+                scrollTimeout = requestAnimationFrame(function() {
+                    nav.classList.toggle('scrolled', window.scrollY > 20);
+                    scrollTimeout = null;
+                });
+            }, { passive: true });
+
+            // ---- Scroll animations (Intersection Observer) ----
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(e) {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+            document.querySelectorAll('.fade-up').forEach(function(el) {
+                fadeObserver.observe(el);
+            });
+
+            // ---- FAQ Accordion ----
+            window.toggleFaq = function(el) {
+                var item = el.parentElement;
+                var isOpen = item.classList.contains('open');
+
+                document.querySelectorAll('.faq-item').forEach(function(i) {
+                    i.classList.remove('open');
+                    var q = i.querySelector('.faq-q');
+                    if (q) q.setAttribute('aria-expanded', 'false');
+                });
+
+                if (!isOpen) {
+                    item.classList.add('open');
+                    el.setAttribute('aria-expanded', 'true');
+                }
+            };
+
+            // ---- Counter animation ----
+            var counterObs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(e) {
+                    if (e.isIntersecting && !e.target.dataset.animated) {
+                        e.target.dataset.animated = 'true';
+                        var target = parseInt(e.target.dataset.target);
+                        var duration = 1800;
+                        var step = target / (duration / 16);
+                        var current = 0;
+
+                        function update() {
+                            current = Math.min(current + step, target);
+                            e.target.textContent = Math.floor(current).toLocaleString();
+                            if (current < target) {
+                                requestAnimationFrame(update);
+                            }
+                        }
+                        requestAnimationFrame(update);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll('.counter').forEach(function(el) {
+                counterObs.observe(el);
+            });
+
+            // ---- Modal Logic ----
+            var modal = document.getElementById('roleModal');
+            var loginBtn = document.getElementById('loginBtn');
+            var getStartedBtn = document.getElementById('getStartedBtn');
+            var heroUploadBtn = document.getElementById('heroUploadBtn');
+            var mockUploadBtn = document.getElementById('mockUploadBtn');
+            var ctaUploadBtn = document.getElementById('ctaUploadBtn');
+            var uploadAreaWidget = document.getElementById('uploadAreaWidget');
+            var closeModalBtn = document.getElementById('closeModalBtn');
+            var studentOpt = document.getElementById('studentOption');
+            var teacherOpt = document.getElementById('teacherOption');
+            var lastFocusedButton = null;
+
+            function openModal(e) {
+                if (e) e.preventDefault();
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                setTimeout(function() {
+                    closeModalBtn.focus();
+                }, 100);
+            }
+
+            function closeModal() {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+                if (lastFocusedButton) {
+                    lastFocusedButton.focus();
+                }
+            }
+
+            var openButtons = [loginBtn, getStartedBtn, heroUploadBtn, mockUploadBtn, ctaUploadBtn];
+            if (uploadAreaWidget) openButtons.push(uploadAreaWidget);
+
+            openButtons.forEach(function(btn) {
+                if (btn) {
+                    btn.addEventListener('click', function(e) {
+                        lastFocusedButton = btn;
+                        openModal(e);
+                    });
+
+                    // Keyboard support for div "buttons"
+                    if (btn.getAttribute('role') === 'button') {
+                        btn.addEventListener('keydown', function(e) {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                lastFocusedButton = btn;
+                                openModal(e);
+                            }
+                        });
+                    }
+                }
+            });
+
+            // Close events
+            closeModalBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) closeModal();
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') closeModal();
+            });
+
+            // Role selection
+            studentOpt.addEventListener('click', function() {
+                console.log('NexaDocs: Student role selected');
+                closeModal();
+            });
+
+            teacherOpt.addEventListener('click', function() {
+                console.log('NexaDocs: Teacher role selected');
+                closeModal();
+            });
+
+            // Keyboard support for role options
+            [studentOpt, teacherOpt].forEach(function(btn) {
+                btn.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        btn.click();
+                    }
+                });
+            });
+
+            // ---- Keyboard navigation for interactive elements ----
+            document.querySelectorAll('.sb-item, .file-card, .dm-file-row, .ds-item, .dr-upload-area, .notif-dot')
+                .forEach(function(el) {
+                    el.setAttribute('role', 'button');
+                    el.setAttribute('tabindex', '0');
+                    el.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            el.click();
+                        }
+                    });
+                });
+
+            // ---- Console branding ----
+            console.log('%c NexaDocs ', 'background:#2563EB;color:white;font-size:20px;font-weight:bold;padding:8px 16px;border-radius:4px;');
+            console.log('%c Share academic files effortlessly. Built for students and educators.', 'font-size:14px;color:#374151;');
+
+        })();
+    </script>
+</body>
+</html>
